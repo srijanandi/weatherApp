@@ -5,4 +5,7 @@ Generates Weather details in Json format.
  Steps to run:
  1. Clone the project
  2. Go to /weatherApp/src/main/java/com/example/weatherApp/WeatherAppApplication.java and run as java application
- 3. Visit Postman and Enter your favourite cities ex: http://localhost:8080/api/v1/weather?cities=Pune,London
+ 3. Visit Postman and Enter your favourite cities 
+ 4. ex: http://localhost:8080/api/v1/weather?cities=Pune,London
+ 5. ex: http://localhost:8080/api/v1/weather?cities=Pune
+ 6. Page: https://github.com/srijanandi/weatherApp/settings/pages
