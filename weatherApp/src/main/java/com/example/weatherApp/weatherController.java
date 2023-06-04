@@ -1,11 +1,13 @@
 package com.example.weatherApp;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @RestController
+@RequestMapping("/api/v1")
 public class weatherController {
 
 	    private final WebClient webClient;
@@ -16,7 +18,7 @@ public class weatherController {
 	    public weatherController() {
 	        this.webClient = WebClient.create();
 	    }
-//API link: http://localhost:8080/weather?cities=Pune,London
+//API link: http://localhost:8080/api/v1/weather?cities=Pune,London
     @GetMapping("/weather")
     public String getWeatherForecast(@RequestParam("cities") String[] cities) {
         StringBuilder result = new StringBuilder();
